@@ -231,7 +231,7 @@ export default function App() {
     <div className="app">
       <header className="topbar">
         <div className="brand">
-          <Logo />
+          <img src="/SheafPDF.png" alt="" className="brand-icon" width={26} height={26} />
           <span>Sheaf</span>
         </div>
         <p className="tagline">
@@ -368,16 +368,6 @@ export default function App() {
 
       <footer className="footer">Everything runs in your browser. Your files are never uploaded.</footer>
     </div>
-  )
-}
-
-function Logo() {
-  return (
-    <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true">
-      <rect x="9" y="3" width="17" height="22" rx="3" fill="var(--accent)" opacity=".35" />
-      <rect x="6" y="7" width="17" height="22" rx="3" fill="var(--accent)" />
-      <path d="M10 14h9M10 18h9M10 22h6" stroke="var(--on-accent)" strokeWidth="2" strokeLinecap="round" />
-    </svg>
   )
 }
 
