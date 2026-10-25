@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 
-// Swap for your real AdSense publisher ID (also update index.html's script tag).
-const AD_CLIENT = 'ca-pub-0000000000000000'
+const AD_CLIENT = 'ca-pub-7717846430402347'
 
 declare global {
   interface Window {
@@ -15,7 +14,7 @@ export function AdSlot({ slot, className }: { slot: string; className?: string }
   const pushed = useRef(false)
 
   useEffect(() => {
-    if (pushed.current || AD_CLIENT.includes('0000000000000000')) return
+    if (pushed.current || slot.includes('0000000000')) return
     pushed.current = true
     try {
       ;(window.adsbygoogle = window.adsbygoogle || []).push({})
