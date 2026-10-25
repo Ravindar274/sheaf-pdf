@@ -234,7 +234,9 @@ export default function App() {
           <Logo />
           <span>Sheaf</span>
         </div>
-        <p className="tagline">Merge and reorder PDFs. Files never leave your device.</p>
+        <p className="tagline">
+          Merge and reorder PDFs. <strong className="tagline-highlight">Files never leave your device.</strong>
+        </p>
       </header>
 
       <input

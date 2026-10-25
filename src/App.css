@@ -84,6 +84,10 @@ input {
   color: var(--muted);
   font-size: 14px;
 }
+.tagline-highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
 
 /* Buttons */
 .btn {
